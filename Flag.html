@@ -1,21 +1,42 @@
 <!Doctype html>
 <body>
-<img id="lschs" width="500" 
-<canvas id="myCanvas" width="400" height="200">
+<img id="lschs" width="0" height="0" src="Picture1.png">
+<canvas id="myCanvas" width="400" height="220">
 	<script>
 		var c=document.getElementById("myCanvas");
 		var ctx=c.getContext("2d");
+		var img = document.getElementById("Picture1.png");
 		ctx.beginPath();
-		ctx.rect(0,0,400,200);
-		ctx.fillStyle="blue";
+		ctx.rect(0,0,400,220);
+		ctx.fillStyle="rgb(50,100,255";
 		ctx.fill();
 		ctx.closePath();
 		ctx.beginPath();
-		ctx.rect(80,0,20,200);
-		ctx.rect(0,40,400,20);
-		ctx.fillStyle="rgb(255,220,50)";
+		ctx.rect(60,0,40,220);
+		ctx.rect(0,60,400,40);
+		ctx.fillStyle="rgb(221,175,63)";
 		ctx.fill();
 		ctx.closePath();
+		ctx.beginPath();
+		ctx.rect(70,0,20,90);
+		ctx.rect(70,95,20,125);
+		ctx.rect(0,70,65,20);
+		ctx.rect(70,70,45,20);
+		ctx.rect(190,70,210,20);
+		ctx.fillStyle="rgb(50,100,255)";
+		ctx.font="40px Times New Roman";
+		ctx.fillText("schs",120,90);
+		ctx.fill();
+		ctx.closePath();
+		
+	</script>
+	<script>
+	window.onload = function() {
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		var img = document.getElementById("lschs");
+		ctx.drawImage(img,200,110);
+	};
 	</script>
 </canvas>
 </body>
