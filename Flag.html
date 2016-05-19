@@ -1,0 +1,22 @@
+<!Doctype html>
+<body>
+<img id="lschs" width="500" 
+<canvas id="myCanvas" width="400" height="200">
+	<script>
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.beginPath();
+		ctx.rect(0,0,400,200);
+		ctx.fillStyle="blue";
+		ctx.fill();
+		ctx.closePath();
+		ctx.beginPath();
+		ctx.rect(80,0,20,200);
+		ctx.rect(0,40,400,20);
+		ctx.fillStyle="rgb(255,220,50)";
+		ctx.fill();
+		ctx.closePath();
+	</script>
+</canvas>
+</body>
+<html>
